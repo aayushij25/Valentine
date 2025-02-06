@@ -1,0 +1,182 @@
+/* FOR DESKTOP */
+
+/* HOME */
+
+#bgImg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+#homeForm {
+  display: flex;
+  font-size: 30px;
+  position: absolute;
+  z-index: 10;
+  top: 250px;
+  right: 40%;
+  left: 30%;
+}
+
+#inputName {
+  font-size: 30px;
+  display: flex;
+}
+
+#submitName {
+  font-size: 20px;
+  position: absolute;
+  z-index: 10;
+  top: 350px;
+  right: 40%;
+  left: 45%;
+  background-color: maroon;
+  color: white;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* ENVELOPE */
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/OoohBaby-Regular.ttf") format("truetype");
+}
+
+#mainDiv {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #c52b2b;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 90vh;
+  border-radius: 10px;
+  background-color: rgb(232, 204, 204);
+  position: absolute;
+}
+
+#stamp {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  right: 25%;
+  cursor: pointer;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+h1 {
+  font-family: "CustomFont", sans-serif;
+  font-size: 100px;
+}
+
+/* OPEN */
+
+h2 {
+  font-family: "CustomFont", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#yes,
+#no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "CustomFont", sans-serif;
+  color: white;
+  border-radius: 4px;
+  background-color: #c52b2b;
+  height: 40px;
+  width: 80px;
+  border: 1px solid maroon;
+  cursor: pointer;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: maroon;
+}
+
+.popup-content {
+  border-radius: 10px;
+}
+
+#noPopupBtn {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+#yesModal {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#video {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: 250px;
+}
+
+h3 {
+  font-family: "CustomFont", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 300px;
+}
+
+#mainOpenDiv {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: white;
+}
