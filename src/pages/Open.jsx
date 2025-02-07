@@ -17,11 +17,12 @@ function Open() {
     <> 
       <div id="mainOpenDiv">
         <div id="stamp">
-          <img src={stamp} alt="stamp" onClick={logout} />
+          <img title='Click to logout' src={stamp} alt="stamp" onClick={logout} />
         </div>
         <div>
           <div>
             <h2>Will you be my Valentine?</h2>
+            <br />
           </div>
           <div id='buttons'>
             <Popup trigger=

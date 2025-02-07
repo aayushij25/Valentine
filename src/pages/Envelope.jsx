@@ -13,7 +13,7 @@ function Envelope() {
     <> 
       <div id="mainDiv">
         <div id="stamp">
-          <img src={stamp} alt="stamp" onClick={openEnvelope} />
+          <img title='Click to open the envelope' src={stamp} alt="stamp" onClick={openEnvelope} />
         </div>
         <div id="container">
           <h1>For {localStorage.getItem("name")}</h1>

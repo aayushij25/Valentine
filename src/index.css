@@ -1,6 +1,22 @@
 /* FOR DESKTOP */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/OoohBaby-Regular.ttf") format("truetype");
+}
+
 /* HOME */
+
+#home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #bgImg {
   height: 100%;
@@ -9,27 +25,33 @@
 }
 
 #homeForm {
-  display: flex;
   font-size: 30px;
   position: absolute;
   z-index: 10;
-  top: 250px;
-  right: 40%;
-  left: 30%;
+  top: 40%;
 }
 
 #inputName {
-  font-size: 30px;
+  font-size: 28px;
   display: flex;
+  border-radius: 10px;
+  border: 3px solid #800000b3;
+  opacity: 1;
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+::placeholder {
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
 }
 
 #submitName {
   font-size: 20px;
   position: absolute;
   z-index: 10;
-  top: 350px;
-  right: 40%;
-  left: 45%;
+  top: 50%;
   background-color: maroon;
   color: white;
   height: 40px;
@@ -43,11 +65,6 @@
 }
 
 /* ENVELOPE */
-
-@font-face {
-  font-family: "CustomFont";
-  src: url("./fonts/OoohBaby-Regular.ttf") format("truetype");
-}
 
 #mainDiv {
   margin: 0;
@@ -170,8 +187,6 @@ h3 {
 }
 
 #mainOpenDiv {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,4 +194,69 @@ h3 {
   height: 100vh;
   position: relative;
   background-color: white;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-family: "CustomFont", sans-serif;
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  #noPopupBtn {
+    right: 7px;
+  }
+  .content {
+    font-size: 22px;
+  }
+  #video {
+    height: 10rem;
+    width: 10rem;
+    left: 27px;
+  }
+  h3 {
+    left: 43px;
+  }
+  #yesModal {
+    height: 177px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 720px) {
+  h1 {
+    font-family: "CustomFont", sans-serif;
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  img {
+    height: 120px;
+    width: 120px;
+  }
+  #noPopupBtn {
+    right: 9px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1070px) {
+  #video {
+    height: 18rem;
+    width: 18rem;
+    left: 60px;
+  }
+  h3 {
+    font-size: 18px;
+    left: 130px;
+  }
+  .popup-content {
+    width: 385px;
+  }
 }
