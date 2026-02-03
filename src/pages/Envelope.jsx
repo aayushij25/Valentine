@@ -11,13 +11,16 @@ function Envelope() {
 
   return (
     <> 
-      <div id="mainDiv">
+      <div id="mainDiv" className='desktop-ui-element'>
         <div id="stamp">
           <img title='Click to open the envelope' src={stamp} alt="stamp" onClick={openEnvelope} />
         </div>
         <div id="container">
           <h1>For {localStorage.getItem("name")}</h1>
         </div>
+      </div>
+      <div id="not-desktop">
+        This website is only available for desktop
       </div>
     </>
   )

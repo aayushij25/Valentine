@@ -29,8 +29,8 @@ function Home() {
   return (
     <>
       
-      <img id='bgImg' src={bgHome} alt="bg-Home" />
-      <div id="home-main">
+      <img id='bgImg' className="desktop-ui-element" src={bgHome} alt="bg-Home" />
+      <div id="home-main" className="desktop-ui-element" >
         <div id="homeForm">
           {/* <label htmlFor="name">Enter Name: </label>&nbsp; */}
           <input id="inputName" type="text" name="name" value={name} placeholder="Enter your name" onChange={handleInputChange} />
@@ -54,6 +54,9 @@ function Home() {
             }
           </Popup>
         }
+      </div>
+      <div id="not-desktop">
+        This website is only available for desktop
       </div>
     </>
   )
